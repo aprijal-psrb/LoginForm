@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_settings">Pengaturan</string>
     <string name="app_name">Login Form</string>
+    <string name="action_settings">Pengaturan</string>
     <string name="belum_punya">Buat Pengguna Baru!</string>
     <string name="buat_sandi">Buat Sandi Baru</string>
     <string name="daftar">Daftar</string>

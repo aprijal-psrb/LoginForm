@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Login Form</string>
+    <string name="daftar">Sign Up</string>
+    <string name="nama_anda">Name</string>
+    <string name="nama_pengguna">Username</string>
+    <string name="buat_sandi">Create New Password</string>
+    <string name="konfirmasi">Confirm Your Password</string>
+    <string name="sandi">Password</string>
+    <string name="masuk">Log In</string>
+    <string name="belum_punya">Create New Account!</string>
+    <string name="action_settings">Settings</string>
+    <string name="todo">ToDo App</string>
+    <string name="error">Error Occurred</string>
+    <string name="error_pengguna">Username/Passoword Error</string>
+    <string name="batal">Cancel</string>
+</resources>
