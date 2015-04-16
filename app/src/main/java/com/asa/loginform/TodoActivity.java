@@ -1,6 +1,5 @@
 package com.asa.loginform;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.TextView;
@@ -14,6 +13,6 @@ public class TodoActivity extends ActionBarActivity {
         super.onCreate(b);
         setContentView(R.layout.todo_layout);
         TextView tvTodo = (TextView)findViewById(R.id.tvTodo);
-        tvTodo.setText(getIntent().getStringExtra("Nama"));
+        tvTodo.setText("Hi "+getIntent().getStringExtra("Nama"));
     }
 }
