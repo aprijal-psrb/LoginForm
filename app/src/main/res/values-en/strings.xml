@@ -13,4 +13,5 @@
     <string name="error">Error Occurred</string>
     <string name="error_pengguna">Username/Passoword Error</string>
     <string name="batal">Cancel</string>
+    <string name="sukses">Success</string>
 </resources>

@@ -14,4 +14,5 @@
     <string name="error">Terjadi Kesalahan</string>
     <string name="error_pengguna">Nama Pengguna/Sandi Salah</string>
     <string name="batal">Batal</string>
+    <string name="sukses">Sukses</string>
 </resources>
