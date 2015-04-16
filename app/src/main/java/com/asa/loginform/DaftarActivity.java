@@ -25,12 +25,14 @@ public class DaftarActivity extends ActionBarActivity {
         btnDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (etSandiUlangDaftar.getText().toString().equals(etSandiDaftar.getText().toString()) && etNamaDaftar.getText() != null && etNamaPenggunaDaftar.getText() != null) {
+                if (etSandiUlangDaftar.getText().toString().equals(etSandiDaftar.getText().toString()) && !etNamaDaftar.getText().toString().equals("") && !etNamaPenggunaDaftar.getText().toString().equals("")) {
                     SharedPreferences user = getApplicationContext().getSharedPreferences("user", MODE_PRIVATE);
                     SharedPreferences.Editor editor = user.edit();
                     editor.putString(etNamaPenggunaDaftar.getText().toString(), etNamaDaftar.getText().toString());
-                    editor.putBoolean(etNamaPenggunaDaftar.getText().toString() + etSandiDaftar.getText().toString(), true);
+                    editor.putBoolean(etNamaPenggunaDaftar.getText().toString() + "Sandi" + etSandiDaftar.getText().toString(), true);
                     editor.apply();
+                    Toast.makeText(getApplicationContext(),R.string.sukses,Toast.LENGTH_SHORT).show();
+                    DaftarActivity.this.finish();
                 } else {
                     Toast.makeText(getApplicationContext(), getString(R.string.error), Toast.LENGTH_SHORT).show();
                 }
