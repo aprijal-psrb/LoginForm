@@ -35,7 +35,7 @@ public class MasukActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 SharedPreferences user = getApplicationContext().getSharedPreferences("user", MODE_PRIVATE);
-                boolean isPenggunaTersedia = user.getBoolean(etNamaPenggunaMasuk.getText().toString() + etSandiMasuk.getText().toString(), false);
+                boolean isPenggunaTersedia = user.getBoolean(etNamaPenggunaMasuk.getText().toString() + "Sandi" + etSandiMasuk.getText().toString(), false);
                 if (isPenggunaTersedia) {
                     Intent todoActivity = new Intent(getApplicationContext(), TodoActivity.class);
                     todoActivity.putExtra("Nama", user.getString(etNamaPenggunaMasuk.getText().toString(), ""));
